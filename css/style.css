@@ -1,0 +1,165 @@
+@import url(normalize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: var(--black);
+    font-family: "IBM Plex Sans", serif;
+    list-style: none;
+}
+
+:root {
+    --white: #FCFAF9;
+    --orange: #FA7453;
+    --black: #191826;
+}
+
+body {
+    position: relative;
+    background-color: var(--white);
+}
+
+header {
+    padding: 64px 80px;
+}
+
+header img {
+    width: 144px;
+    margin-bottom: 128px;
+}
+
+header h1 {
+    width: 928px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+header p {
+    width: 736px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0px;
+}
+
+.container-main {
+    z-index: -1;
+    position: absolute;
+    background-color: var(--black);
+    width: 1120px;
+    height: 600px;
+    padding-right: 64px;
+    border-radius: 12px;
+    top: 320px;
+    left: 160px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.left-main {
+    padding-bottom: 200px;
+    margin-right: 32px;
+    width: 512px;
+}
+
+.left-main img {
+    width: 369px;
+}
+
+.right-main {
+    padding-top: 200px;
+    width: 512px;
+}
+
+.premium {
+    width: 100%;
+    padding: 56px;
+    border-radius: 16px;
+    background-color: var(--orange);
+}
+
+.premium h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: 0px;
+    width: 400px;
+    margin-bottom: 24px;
+}
+
+.premium p {
+    width: 400px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+}
+
+.premium span:nth-child(1) {
+    width: 77px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0px;
+    margin-right: 8px;
+}
+
+.premium span:nth-child(2) {
+    width: 71px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.button {
+    margin-top: 48px;
+}
+
+.button a {
+    height: 64px;
+    border-radius: 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 16px 32px;
+    width: 400px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+.button a:first-child {
+    background-color: var(--black);
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.button a:last-child {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.button img {
+    height: 20px;
+    width: 17px;
+}
