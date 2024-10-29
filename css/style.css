@@ -15,6 +15,8 @@
     --white: #FCFAF9;
     --orange: #FA7453;
     --black: #191826;
+    --hover-iOS: #66E2DC;
+    --hover-android: #FFB964;
 }
 
 body {
@@ -65,7 +67,7 @@ main {
     padding-right: 64px;
     border-radius: 12px;
     top: 320px;
-    left: 160px;
+    left: 440px;
 }
 
 .container {
@@ -74,6 +76,9 @@ main {
 }
 
 .left-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 200px;
     margin-right: 32px;
     width: 512px;
@@ -104,7 +109,7 @@ main {
     margin-bottom: 24px;
 }
 
-.premium p {
+.premium .text {
     width: 400px;
     font-weight: normal;
     font-size: 20px;
@@ -113,16 +118,21 @@ main {
     margin-bottom: 40px;
 }
 
-.premium span:nth-child(1) {
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price .dollar {
     width: 77px;
     font-weight: bold;
     font-size: 64px;
     line-height: 110%;
     letter-spacing: 0px;
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
-.premium span:nth-child(2) {
+.price .date {
     width: 71px;
     font-weight: normal;
     font-size: 20px;
@@ -146,6 +156,7 @@ main {
     font-size: 18px;
     line-height: 180%;
     letter-spacing: 0px;
+    transition: all ease 0.3s;
 }
 
 .button a:first-child {
@@ -154,12 +165,78 @@ main {
     color: var(--white);
 }
 
+.button a:first-child:hover {
+    background-color: var(--hover-iOS);
+    color: var(--black);
+}
+
 .button a:last-child {
     color: var(--black);
     background-color: var(--white);
 }
 
+.button a:last-child:hover {
+    color: var(--black);
+    background-color: var(--hover-android);
+}
+
 .button img {
+    margin-bottom: -4px;
     height: 20px;
     width: 17px;
+    margin-right: 8px;
+    transition: all ease 0.3s;
+}
+
+.button a:hover img {
+    filter: opacity(0.6) drop-shadow(0 0 0 var(--black));
+}
+
+footer {
+    display: flex;
+    padding: 64px 80px;
+}
+
+.left-footer img {
+    margin-right: 128px;
+    width: 144px;
+}
+
+.mid-footer {
+    margin-right: auto;
+}
+
+.mid-footer li:not(:last-child) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.mid-footer li:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.right-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-footer img {
+    width: 20px;
+    height: 20px;
+    margin-left: 32px;
+    transition: all ease 0.3s;
+}
+
+.right-footer a:first-child {
+    margin-left: 0px;
+}
+
+.right-footer img:hover {
+    filter: opacity(0.4) drop-shadow(0 0 0 var(--orange));
 }
